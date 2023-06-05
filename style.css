@@ -33,6 +33,8 @@ button {
   margin-top: 10px;
   border-radius: 13px;
   border: transparent;
+   cursor: pointer;
+
 }
 button:hover {
   color: white;
