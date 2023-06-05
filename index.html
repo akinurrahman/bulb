@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="img-container">
+        <img class="bulb-img" src="images/bulbOff.jpg" alt="bulb off" />
+      </div>
+      <div class="btn-container">
+        <button class="btn-white">white bulb</button>
+        <button class="btn-yellow">yellow bulb</button>
+        <button class="turn-off-bulb">turn off</button>
+      </div>
+      <p class="copyright">&copy; Akinur Rahman</p>
+    </div>
+    <script>
+      const whiteBtn = document.querySelector(".btn-white");
+      const yellowBtn = document.querySelector(".btn-yellow");
+      const turnOffBulb = document.querySelector(".turn-off-bulb");
+
+      //   white bulb
+      const whiteBulb = () => {
+        const bulb = document.querySelector(".bulb-img");
+        bulb.setAttribute("src", "images/whiteBulb.jpg");
+      };
+      whiteBtn.addEventListener("click", whiteBulb);
+      //   yellow bulb
+      const yelloBulb = () => {
+        const bulb = document.querySelector(".bulb-img");
+        bulb.setAttribute("src", "images/yelloBulb.jpg");
+      };
+      yellowBtn.addEventListener("click", yelloBulb);
+
+      //   turn off
+      const bulbOff = () => {
+        const bulb = document.querySelector(".bulb-img");
+        bulb.setAttribute("src", "images/bulbOff.jpg");
+      };
+      turnOffBulb.addEventListener("click", bulbOff);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Roboto&family=Ubuntu:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.bulb-img {
+  height: 457px;
+  width: 401px;
+  border-radius: 50px;
+}
+
+.btn-container {
+  width: 347px;
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  width: 100px;
+  height: 42px;
+  padding: 7px;
+  margin-top: 10px;
+  border-radius: 13px;
+}
+button:hover {
+  color: white;
+  background-color: orangered;
+}
+.copyright {
+  position: absolute;
+  bottom: 15px;
+  font-size: 16px;
+}
+
+/* media query */
+@media (max-width: 480px) {
+  .bulb-img {
+    height: 405px;
+    width: 326px;
+  }
+  .copyright {
+    position: absolute;
+    bottom: 12px;
+    font-size: 12px;
+  }
+}
